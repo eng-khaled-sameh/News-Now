@@ -7,6 +7,9 @@ class NewsNowBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CategorysListView();
+    return Padding(
+      padding: const EdgeInsets.only(left: 12, right: 12),
+      child: Column(children: [CategorysListView()]),
+    );
   }
 }
