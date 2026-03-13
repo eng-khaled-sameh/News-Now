@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:news_now/views/home_now_app.dart';
 
 void main() {
-  runApp(NewsNowApp());
+  runApp(const NewsNowApp());
 }
 
 class NewsNowApp extends StatelessWidget {
@@ -10,6 +10,9 @@ class NewsNowApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return HomeNewsNowApp();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeNewsNowApp(),
+    );
   }
 }
